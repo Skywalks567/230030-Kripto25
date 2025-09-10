@@ -15,31 +15,22 @@ Program ini mengimplementasikan algoritma **Hill Cipher** untuk proses enkripsi,
    - Plaintext diubah ke bentuk angka.
    - Jika panjang plaintext tidak habis dibagi ukuran matriks kunci `n`, maka ditambahkan padding huruf `X`.
    - Plaintext diproses per blok sepanjang `n` huruf.
-   - Setiap blok dihitung dengan rumus:
-     \[
-     C = M_k \times P \pmod{26}
-     \]
-     - `M_k` = matriks kunci
+   - Setiap blok dihitung dengan rumus: [C = Mk × P mod 26]
+     - `Mk` = matriks kunci
      - `P` = blok plaintext
    - Hasil berupa ciphertext.
 
 3. **Dekripsi**
    - Ciphertext diubah ke angka.
    - Dicari invers matriks kunci modulo 26.
-   - Setiap blok ciphertext dihitung dengan rumus:
-     \[
-     P = M_k^{-1} \times C \pmod{26}
-     \]
+   - Setiap blok ciphertext dihitung dengan rumus: [P = Mk^(-1) × C mod 26]
    - Hasil berupa plaintext.
 
 4. **Pencarian Kunci**
    - Mengambil blok persegi pertama dari plaintext dan ciphertext sepanjang `n × n`.
-   - Matriks plaintext (`M_p`) dan ciphertext (`M_c`) dibentuk.
-   - Dicari invers dari `M_p` modulo 26.
-   - Matriks kunci dihitung dengan rumus:
-     \[
-     M_k = M_c \times M_p^{-1} \pmod{26}
-     \]
+   - Matriks plaintext (`Mp`) dan ciphertext (`Mc`) dibentuk.
+   - Dicari invers dari `Mp` modulo 26.
+   - Matriks kunci dihitung dengan rumus: [Mk = Mc × Mp^(-1) mod 26]
 
 5. **Invers Matriks Modulo 26**
    - Hitung determinan matriks, lalu cari invers determinan mod 26.
