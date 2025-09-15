@@ -1,4 +1,4 @@
-# Vigenere Cipher (Python Implementation)
+# Vigenere Cipher
 
 ## 📌 Deskripsi
 Program ini merupakan implementasi algoritma **Vigenere Cipher** menggunakan bahasa pemrograman Python.  
