@@ -28,12 +28,12 @@ Program ini dapat melakukan proses **enkripsi** dan **dekripsi** terhadap pesan 
    - Input: ciphertext `(c1, c2)` dan private key `x`.
    - Hitung shared key:
      ```
-     s = c1^x mod p
+     c1^x = (c1)^x mod p
      ```
-   - Cari **modular inverse** dari `s` terhadap `p` → `s_inv`.
+   - Cari **modular inverse** dari `c1^x` terhadap `p` → `c1^x_inv`.
    - Dekripsi pesan:
      ```
-     m = (c2 * s_inv) mod p
+     m = (c2 * c1^x_inv) mod p
      ```
 
 4. **Program Utama**
