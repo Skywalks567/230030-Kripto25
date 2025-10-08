@@ -36,6 +36,7 @@ Data seperti **teks** atau **gambar** disembunyikan ke dalam urutan langkah-lang
 │ └── Hide_image.png
 │ └── Hide_Text.png
 └── main.py
+└── README.md
 ```
 ---
 
