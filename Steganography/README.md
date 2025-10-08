@@ -19,7 +19,7 @@ Data seperti **teks** atau **gambar** disembunyikan ke dalam urutan langkah-lang
 ---
 
 ## 🧱 Struktur Folder
-
+```
 ├── Examples/
 │ ├── secret.txt
 │ └── secret.png
@@ -33,10 +33,10 @@ Data seperti **teks** atau **gambar** disembunyikan ke dalam urutan langkah-lang
 │ └── image_decoded_output.png
 │
 ├── Hasil_Run/
-│ └── image.png
-│
+│ └── Hide_image.png
+│ └── Hide_Text.png
 └── main.py
-
+```
 ---
 
 ## 🚀 Cara Menjalankan Program
